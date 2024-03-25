@@ -2,6 +2,11 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        double precoCompraFornecedor = 140;
+
+        ServicoDePrecificacao servicoDePrecificacao = new ServicoDePrecificacao();
+        servicoDePrecificacao.calcularPrecoVenda(precoCompraFornecedor);
+
+        System.out.printf("Preço: %.2f%n", precoCompraFornecedor);
     }
 }
